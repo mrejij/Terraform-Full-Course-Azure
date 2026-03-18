@@ -27,8 +27,8 @@ terraform.rc
 *.log
 
 # Ignore sensitive variable files
-*/*/*.tfvars
-*.tfvars.json
+# */*/*.tfvars
+# *.tfvars.json
 
 # Ignore backups of Terraform files
 *.tf.backup
