@@ -13,6 +13,10 @@ terraform {
       source = "hashicorp/azuread"
       version = "~> 3.0.2"
     }
+    tls = {
+      source = "hashicorp/tls"
+      version = "~> 4.0.0"
+    }
   }
 
   required_version = ">= 1.9.0"
@@ -20,6 +24,8 @@ terraform {
 # configures the provider
 
 provider "azurerm" {
+  subscription_id = var.SUB_ID
+
   features {
     key_vault {
       purge_soft_delete_on_destroy = false
@@ -27,5 +33,4 @@ provider "azurerm" {
   }
 }
 provider "azuread" {
-  
 }
