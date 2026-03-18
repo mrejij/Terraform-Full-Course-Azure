@@ -57,6 +57,7 @@ module "aks" {
   resource_group_name    = var.rgname
   keyvault_id            = module.keyvault.keyvault_id
   keyvault_name          = var.keyvault_name
+  aks_cluster_name       = var.aks_cluster_name
 
   depends_on = [
     module.ServicePrincipal

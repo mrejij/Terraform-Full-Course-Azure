@@ -20,3 +20,9 @@ variable "keyvault_name" {
 variable "SUB_ID" {
   type = string
 }
+
+variable "aks_cluster_name" {
+  type        = string
+  description = "The name of the AKS cluster"
+  default = "aks-demo-cluster"
+}

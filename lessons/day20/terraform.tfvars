@@ -9,3 +9,6 @@ service_principal_name = "aks-sp"
 
 #Key Vault Related Parameter Sections
 keyvault_name = "demo-aks-kv"
+
+#AKS Cluster Related Parameter Sections
+aks_cluster_name = "test-aks-cluster"

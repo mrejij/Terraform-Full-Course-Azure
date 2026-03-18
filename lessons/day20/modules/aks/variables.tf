@@ -26,9 +26,8 @@ variable "keyvault_name" {
   type        = string
   description = "The name of the Key Vault to store SSH keys"
 }
-
 variable "aks_cluster_name" {
   type        = string
-  description = "The name of the AKS cluster"
-  default = "aks-demo-cluster"
+  description = "The name of the AKS cluster to create"
+  default = "demo-aks-cluster"
 }
